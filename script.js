@@ -13,6 +13,9 @@ let songText = document.getElementById('songText');
 
 let Songs = [
     {
+        songName:  "BLACKPINK - 'Kill This Love' ",
+        filePath: "songs/5.mp3", coverPath:" covers/5.jpg",
+    },{
         songName:  "Brown Rang International Villager 320 Kbps",
         filePath: "songs/1.mp3", coverPath:" covers/1.jpg",
     },{
@@ -27,9 +30,6 @@ let Songs = [
     },{
         songName:  "Love Yourself- by Justin Beiber ",
         filePath: "songs/4.mp3", coverPath:" covers/4.jpg",
-    },{
-        songName:  "BLACKPINK - 'Kill This Love' ",
-        filePath: "songs/5.mp3", coverPath:" covers/5.jpg",
     },{
         songName:  "Justin Bieber - Boyfriend",
         filePath: "songs/6.mp3", coverPath:" covers/6.jpg",
