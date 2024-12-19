@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=covers/1.jpg1.0"> -->
+    <title>Apple Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="name"><img src="logo.jpg" alt=""><alt="">Apple Music</li>
+            <li >Home</li>
+            <li >About</li>
+            <li >New</li>
+            <li >Radio</li>
+        </ul>
+    </nav>
+    <div id="container">
+    <div class="container-left">
+      <div class="songItems">
+        <div class="songItem">
+            <img class="image" alt="1"><span class="songName text" ></span></span><span> 2.53<i class="fa-solid fa-circle-play play smallPlay "  id = '0'></i></span>
+        </div>
+          <div class="songItem">
+              <img class="image" alt="2"><span class="songName text" ></span></span><span> 5.34<i class="fa-solid fa-circle-play play smallPlay" id = "1">  </i></span>
+          </div>
+            <div class="songItem">
+                <img class="image" alt="3"><span class="songName text"></span></span><span> 5.34<i class="fa-solid fa-circle-play play smallPlay" id="2">  </i></span>
+              </div>
+              <div class="songItem">
+                    <img class="image" alt="5"><span class="songName text" ></span></span><span> 5.34<i class="fa-solid fa-circle-play play smallPlay"  id = '3'> </i></span>
+                </div>
+                <div class="songItem">
+                    <img class="image" alt="5"><span class="songName text" ></span></span><span> 5.34<i class="fa-solid fa-circle-play play smallPlay"  id = '4'> </i></span>
+                </div>
+                 
+                
+      </div>
+    </div>
+    <div class="container-right">
+    </div>
+</div>
+    <div class="bottom">
+        <input type="range" style="width: 80%" value="0" id="progressBar">
+        <div class="icons">
+            <i class="fa-solid fa-3x fa-backward" id="backward"></i>
+            <i class="fa-solid fa-3x fa-circle-play" id="playCircle"></i>
+            <i class="fa-solid fa-3x fa-forward" id="forward"></i>
+            
+            <img src="vol.gif" alt="" id="gif"><span id="songText">Let Me Love You</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
