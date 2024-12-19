@@ -42,7 +42,6 @@ playButton.addEventListener('click', ()=>{
         playButton.classList.add('fa-circle-pause');
         gif.style.opacity = 1;
         songText.innerText = Songs[songIndex].songName;
-        alert(" Bhaya gaane mat Baja naa bhaya");
     }
     else{
         audioElement.pause();
