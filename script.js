@@ -10,6 +10,10 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let smallPlay = Array.from(document.getElementsByClassName('smallPlay'));
 let gif = document.getElementById('gif');
 let songText = document.getElementById('songText');
+let volumeSlider = document.getElementById('volumeSlider');
+let muteBtn = document.getElementById('muteBtn');
+
+audioElement.volume = 0.5;
 
 let Songs = [
    {
@@ -109,6 +113,35 @@ progressBar.addEventListener('change', ()=>{
     audioElement.currentTime = progressBar.value * audioElement.duration / 100;
     })
 
+volumeSlider.addEventListener('input', ()=>{
+    audioElement.volume = volumeSlider.value / 100;
+    if(audioElement.volume === 0){
+        audioElement.muted = true;
+        muteBtn.classList.remove('fa-volume-high');
+        muteBtn.classList.add('fa-volume-xmark');
+    } else {
+        audioElement.muted = false;
+        muteBtn.classList.remove('fa-volume-xmark');
+        muteBtn.classList.add('fa-volume-high');
+    }
+})
+
+muteBtn.addEventListener('click', ()=>{
+    if(audioElement.muted){
+        audioElement.muted = false;
+        muteBtn.classList.remove('fa-volume-xmark');
+        muteBtn.classList.add('fa-volume-high');
+        if(audioElement.volume === 0){
+            audioElement.volume = 0.5;
+            volumeSlider.value = 50;
+        }
+    } else {
+        audioElement.muted = true;
+        muteBtn.classList.remove('fa-volume-high');
+        muteBtn.classList.add('fa-volume-xmark');
+    }
+})
+
 songItems.forEach((element,i)=> {
     // console.log(element,i);
     element.getElementsByClassName('songName')[0].innerText = Songs[i].songName;
@@ -197,18 +230,3 @@ backwardButton.addEventListener('click', ()=>{
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  
