@@ -54,7 +54,7 @@ nav ul li{
 }
 nav ul li a{
   display: block;
-  padding: 6px 6px;
+  padding: 6px 18px;
   color: wheat;
   text-decoration: none;
   cursor: pointer;
@@ -199,6 +199,21 @@ nav ul li a.active{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.volume-control{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.volume-control i{
+  font-size: 1.2rem !important;
+  cursor: pointer;
+  color: var(--text-light);
+}
+#volumeSlider{
+  width: 90px;
+  cursor: pointer;
+  accent-color: var(--accent);
 }
 
 /* ---------- SIMPLE CONTENT PAGES (about/new/radio) ---------- */
